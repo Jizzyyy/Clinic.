@@ -31,9 +31,9 @@ class _LoginState extends State<Login> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(
-                  height: 120,
-                ),
+                // const SizedBox(
+                //   height: 120,
+                // ),
                 Image.asset("assets/images/logodinas.png"),
                 Container(
                   margin: EdgeInsets.only(left: 6, right: 6),
@@ -46,7 +46,7 @@ class _LoginState extends State<Login> {
               ],
             ),
             Container(
-              margin: EdgeInsets.only(top: 25),
+              margin: EdgeInsets.only(top: 10),
               padding: EdgeInsets.all(14),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -134,14 +134,19 @@ class _LoginState extends State<Login> {
                         color: Colors.white),
                   )),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 15),
-              child: Center(
-                  child: Text(
-                "Lupa Kata Sandi?",
-                style: TextStyle(color: Colors.grey[600], fontSize: 15),
-              )),
-            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/forgotpw');
+              }, 
+              child: Text("Lupa Kata Sandi")),
+            // Container(
+            //   margin: EdgeInsets.only(top: 15),
+            //   child: Center( 
+            //       child: Text(
+            //     "Lupa Kata Sandi?",
+            //     style: TextStyle(color: Colors.grey[600], fontSize: 15),
+            //   )),
+            // ),
             Container(
               // margin: EdgeInsets.only(
               //   top: 10,

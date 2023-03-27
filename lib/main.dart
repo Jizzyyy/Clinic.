@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:puskesmas_nganjuk2/others/pcolor.dart';
+import 'package:puskesmas_nganjuk2/pages/forgotpassword.dart';
 import 'package:puskesmas_nganjuk2/pages/home.dart';
 import 'package:puskesmas_nganjuk2/pages/login.dart';
 import 'package:puskesmas_nganjuk2/pages/register.dart';
 import 'package:puskesmas_nganjuk2/pages/splashscreen.dart';
+import 'package:puskesmas_nganjuk2/pages/verification.dart';
 
 // void main() {
 //   runApp(const MyApp());
@@ -32,6 +34,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => Login(),
         '/home': (context) => HomePage(),
         '/register': (context) => Register(),
+        '/forgotpw': (context) => ForgotPassword(),
+        '/verif': (context) => Verification(),
       },
     );
   }
